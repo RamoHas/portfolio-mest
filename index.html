@@ -514,7 +514,7 @@
     <script>
       // JavaScript to trigger animations on scroll
       const timelineItems = document.querySelectorAll('[id^="timeline-item-"]');
-  
+    
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -525,8 +525,24 @@
         },
         { threshold: 0.5 } // Trigger when 50% of the item is visible
       );
-  
-      timelineItems.forEach((item) => observer.observe(item));
+    
+      // Manually trigger the animation on page load for already visible items
+      timelineItems.forEach((item) => {
+        // Check if the element is already in view
+        if (isElementInViewport(item)) {
+          item.classList.remove('opacity-0');
+        } else {
+          // Observe the element for when it enters the viewport
+          observer.observe(item);
+        }
+      });
+    
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+      }
     </script>
+    
   </body>
 </html>
