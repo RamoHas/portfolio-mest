@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      /* Keyframes for typing animation */
+      @keyframes typing {
+        0% { width: 0; }
+        100% { width: 100%; }
+      }
+  
+      /* Keyframes for blinking cursor */
+      @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+      }
+  
+      /* Keyframes to control visibility */
+      @keyframes visibility {
+        0%, 50% { opacity: 1; }
+        50.01%, 100% { opacity: 0; }
+      }
+  
+      /* Animation for the first text */
+      .animate-typing-1 {
+        animation: 
+          typing 4s steps(30, end) infinite,
+          blink-caret 0.75s step-end infinite,
+          visibility 8s step-end infinite;
+        animation-fill-mode: none; /* Reset width after each cycle */
+      }
+  
+      /* Animation for the second text */
+      .animate-typing-2 {
+        animation: 
+          typing 4s steps(30, end) 4s infinite,
+          blink-caret 0.75s step-end 4s infinite,
+          visibility 8s step-end infinite;
+        animation-fill-mode: none; /* Reset width after each cycle */
+      }
+    </style>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="h-[140vh]  bg-center bg-no-repeat bg-[url('./image/pic8.jpg')] bg-cover ">
+      
+      <nav class="flex flex-row justify-around items-center bg-[#101828] py-4 text-white ">
+        <!-- <img src="" alt="logo" class="logo" /> -->
+        <p class="text-4xl text-[#00d646] items-center mx-4 my-4">[
+          <span class="text-2xl text-white font-bold">O</span>
+          <span class="text-2xl">.</span>
+        </span><span class="text-2xl text-white font-bold">I</span> ]
+      </p>
+        <ul class="flex flex-row justify-center gap-6">
+          <li><a href="#" class="hover:text-[#00d646]">HOME</a></li>
+          <li><a href="index.html#experience" class="hover:text-[#00d646]">EXPERIENCE</a></li>
+          <li><a href="project.html" class="hover:text-[#00d646]">PORTFOLIO</a></li>
+          <li><a href="index.html#contact" class="hover:text-[#00d646]">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="h-full bg-gradient-to-r from-black/75 to-black/65"></div>
+      
+
+      </div>
+      
+      <div class=" ml-225 font-bold text-white absolute top-70">
+        <h1 class="text-8xl">I <span class="text-8xl" style="color: #00d646">'</span> M</h1>
+        <h1 class="text-8xl">O M A R</h1>
+        <h1 class="text-8xl ">
+          I N U S A H<span class="highlight" style="color: #00d646">.</span>
+        </h1>
+        <div class="relative">
+          <!-- First Text -->
+          <p class="my-6 text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-1">
+             A<span class="text-cyan-500"> WEB</span><span class="text-[#00d646]"> DEVELOPER</span>
+          </p>
+      
+          <!-- Second Text -->
+          <p class="my-10 text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-2 absolute top-0 left-0" style="animation-delay: 2s;">
+           CYBER<span class="text-cyan-500">SECURITY</span><span class="text-[#00d646]"> EXPERT</span> 
+          </p>
+        </div>
+       
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="h-[150vh] bg-[url('./image/pic7.jpg')] bg-center bg-no-repeat bg-cover">
+      
+       <!-- About Section -->
+    <div class=" w-8/12 ml-62 bg-[#101828] py-3 px-6 leading-15 text-white text-center absolute top-180 hover:scale-105 transition-transform duration-300">
+      <!-- <img src="" alt="profile-image" class="profile-image" /> -->
+      <p class="text-6xl text-[#00d646] items-center mx-4 my-4">[
+        <span class="text-4xl text-white font-bold">O</span>
+        <span class="text-4xl">.</span>
+      </span><span class="text-4xl text-white font-bold">I</span> ]
+    </p>
+      
+      <p class="leading-7 px-3 py-5 text-2xl">
+        Hi there! I’m Omar Inusah, a passionate scientist and web developer with
+        a love for creating intuitive user experiences and responsive websites
+        that keep all users satisfied. I thrive on turning ideas into reality
+        and enjoy the challenge of solving problems through creativity and
+        technology. With a year of experience in web development, I’ve had the
+        opportunity to work on a variety of projects, from building responsive
+        websites to this very portfolio website. My approach is always
+        collaborative, detail-oriented, and focused on delivering results that
+        not only meet but exceed expectations. I believe that curiosity and
+        continuous learning are key to growth, both personally and
+        professionally. I’m excited to share my work with you and would love to
+        connect! Whether you’re looking to collaborate, have a question, or just
+        want to say hello, feel free to reach out. Let’s create something
+        amazing together!
+      </p>
+      <button class="px-4 py-2 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg bg-[#00d646] text-center"><a href="">DOWNLOAD RESUME</a></button>
+    </div>
+      <!--<div class="section-header "> -->
+        <!-- <div class="text-center text-8xl flex flex-row justify-center gap-6 font-bold items-center ">
+          <span class="text-[#BEC7D5]">01</span>
+          <p class="text-8xl text-cyan-500">SKILLS</p>
+        </div>
+        <h2 class="text-xl mt-4 text-gray-400">
+          MY TECHNICAL SKILLS ACCRUED SO FAR:
+        </h2>
+      </div> -->
+      <div class="absolute top-320">
+        <div class="section-header ">
+          <div class="text-center text-8xl flex flex-row justify-center gap-6 font-bold items-center">
+            <span class="text-[#BEC7D5]">01</span>
+            <p class="text-8xl text-cyan-500">SKILLS</p>
+          </div>
+          <h2 class="text-xl mt-4 text-gray-400 text-center items-center">
+            MY TECHNICAL SKILLS ACCRUED SO FAR:
+          </h2>
+        </div>
+        <!-- HTML Skill -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-4 md:mx-8 my-8 leading-15">
+          <!-- HTML Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">HTML</h3>
+            <p class="text-gray-400 text-sm">
+              The foundation of web development. I use HTML to structure content and create accessible, semantic web pages.
+            </p>
+          </div>
+        
+          <!-- CSS Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">CSS</h3>
+            <p class="text-gray-400 text-sm">
+              I use CSS to style and design beautiful, responsive websites that work seamlessly across all devices.
+            </p>
+          </div>
+        
+          <!-- JavaScript Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">JavaScript</h3>
+            <p class="text-gray-400 text-sm">
+              I use JavaScript to add interactivity and dynamic functionality to websites, making them more engaging.
+            </p>
+          </div>
+        
+          <!-- Cybersecurity Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/3063/3063188.png" alt="Cybersecurity Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">Cybersecurity</h3>
+            <p class="text-gray-400 text-sm">
+              I focus on securing web applications and protecting user data from potential threats and vulnerabilities.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-4 md:mx-8 my-6">
+          <!-- Git Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">Git</h3>
+            <p class="text-gray-400 text-sm">
+              I use Git for version control to track changes, collaborate with teams, and manage code efficiently.
+            </p>
+          </div>
+        
+          <!-- GitHub Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">GitHub</h3>
+            <p class="text-gray-400 text-sm">
+              I use GitHub to host and share code repositories, collaborate with others, and contribute to open-source projects.
+            </p>
+          </div>
+        
+          <!-- Frontend Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/2282/2282188.png" alt="Frontend Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">Frontend</h3>
+            <p class="text-gray-400 text-sm">
+              I specialize in building responsive and user-friendly interfaces using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        
+          <!-- Backend Card -->
+          <div class="bg-[#101828] p-6 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300">
+            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="Backend Icon" class="w-16 h-16 mx-auto mb-4" />
+            <h3 class="text-2xl font-bold text-white mb-2">Backend</h3>
+            <p class="text-gray-400 text-sm">
+              I develop robust server-side applications, APIs, and databases to power dynamic and scalable web applications.
+            </p>
+          </div>
+        </div>
+      <!-- <div class="h-full bg-gradient-to-r from-black/50 to-transparent">
+
+      </div> -->
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="h-[100vh] text-center pt-10 bg-gray-900 text-white">
+      <!-- Section Header -->
+      <div class="section-header mb-16">
+        <div class="text-center text-8xl flex flex-row justify-center gap-6 font-bold items-center">
+          <span class="text-[#BEC7D5]">02</span>
+          <p class="text-8xl text-cyan-500">PORTFOLIO</p>
+        </div>
+        <h2 class="text-xl mt-4 text-gray-400">
+          MY LATEST WORK HERE. <a href="" class="text-cyan-500 hover:underline">SEE MORE ></a>
+        </h2>
+      </div>
+    
+      <!-- Projects Container -->
+      <div class="flex flex-row justify-center items-center gap-8 px-8">
+        <!-- Project 1 -->
+        <a href="#" class="project h-96 w-80 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" style="background-image: url(/path/to/project1.jpg);">
+          <div class="h-full flex items-end p-6 bg-black/50 hover:bg-black/30 transition-colors duration-300 rounded-lg">
+            <h2 class="text-2xl font-bold text-white">PROJECT 1</h2>
+          </div>
+        </a>
+    
+        <!-- Project 2 -->
+        <a href="#" class="project h-96 w-80 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" style="background-image: url(/path/to/project2.jpg);">
+          <div class="h-full flex items-end p-6 bg-black/50 hover:bg-black/30 transition-colors duration-300 rounded-lg">
+            <h2 class="text-2xl font-bold text-white">PROJECT 2</h2>
+          </div>
+        </a>
+    
+        <!-- Project 3 -->
+        <a href="#" class="project h-96 w-80 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" style="background-image: url(/path/to/project3.jpg);">
+          <div class="h-full flex items-end p-6 bg-black/50 hover:bg-black/30 transition-colors duration-300 rounded-lg">
+            <h2 class="text-2xl font-bold text-white">PROJECT 3</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="h-[200vh] bg-[url('https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_980,h_2856,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg')] bg-center bg-no-repeat bg-cover" id="experience">
+      <div class="text-center text-8xl flex flex-row justify-center gap-9 font-bold absolute top-720 bottom-0 left-105 content-center">
+        <span class="text-[#BEC7D5]">03</span>
+        <p class="text-8xl text-cyan-500">EXPERIENCE</p>
+      </div>
+      <div class="mx-auto  pt-80">
+        <!-- Timeline Container -->
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div
+            class="absolute left-1/2 w-0.5 h-full bg-[#333B50] transform -translate-x-1/2"
+          ></div>
+  
+          <!-- Timeline Items -->
+          <div class="space-y-8">
+            <!-- Timeline Item 1 (Left Side) -->
+            <div class="flex items-center w-full">
+              <!-- Left Content -->
+              <div class="w-1/2 pr-8 text-right">
+                <h3 class="text-3xl font-semibold">Backend Development Specialization</h3>
+                <p class="text-2xl text-[#101828]">Node.js and MongoDB</p>
+                <p class="text-2xl text-[#101828]">Jan 2020 - Dec 2021</p>
+              </div>
+  
+              <!-- Point on the Line -->
+              <div
+                class="relative w-6 h-6 bg-[#00d646] rounded-full flex items-center justify-center"
+              >
+                <!-- <div class="w-4 h-4 bg-white rounded-full"></div> -->
+              </div>
+  
+              <!-- Right Content (Empty for alignment) -->
+              <div class="w-1/2"></div>
+            </div>
+  
+            <!-- Timeline Item 2 (Right Side) -->
+            <div class="flex items-center w-full">
+              <!-- Left Content (Empty for alignment) -->
+              <div class="w-1/2"></div>
+  
+              <!-- Point on the Line -->
+              <div
+                class="relative w-6 h-6 bg-[#00d646] rounded-full flex items-center justify-center"
+              >
+                <!-- <div class="w-4 h-4 bg-white rounded-full"></div> -->
+              </div>
+  
+              <!-- Right Content -->
+              <div class="w-1/2 pl-8">
+                <h3 class="text-3xl font-semibold">Freelance Project</h3>
+                <p class="text-2xl text-[#101828]">Static Website</p>
+                <p class="text-2xl text-[#101828]">Jan 2022 - Present</p>
+              </div>
+            </div>
+  
+            <!-- Timeline Item 3 (Left Side) -->
+            <div class="flex items-center w-full">
+              <!-- Left Content -->
+              <div class="w-1/2 pr-8 text-right">
+                <h3 class="text-3xl font-semibold">Junior web Developer</h3>
+                <p class="text-2xl text-[#101828]">Javascript </p>
+                <p class="text-2xl text-[#101828]">Jan 2018 - Dec 2019</p>
+              </div>
+  
+              <!-- Point on the Line -->
+              <div
+                class="relative w-6 h-6 bg-[#00d646] rounded-full flex items-center justify-center"
+              >
+                <!-- <div class="w-4 h-4 bg-white rounded-full"></div> -->
+              </div>
+  
+              <!-- Right Content (Empty for alignment) -->
+              <div class="w-1/2"></div>
+            </div>
+  
+            <!-- Timeline Item 4 (Right Side) -->
+            <div class="flex items-center w-full">
+              <!-- Left Content (Empty for alignment) -->
+              <div class="w-1/2"></div>
+  
+              <!-- Point on the Line -->
+              <div
+                class="relative w-6 h-6 bg-[#00d646] rounded-full flex items-center justify-center"
+              >
+                <!-- <div class="w-4 h-4 bg-white rounded-full"></div> -->
+              </div>
+  
+              <!-- Right Content -->
+              <div class="w-1/2 pl-8">
+                <h3 class="text-3xl font-semibold">Junior Web Developer</h3>
+                <p class="text-2xl text-[#101828]">CSS</p>
+                <p class="text-2xl text-[#101828]">Jan 2016 - Dec 2017</p>
+              </div>
+            </div>
+  
+            <!-- Timeline Item 5 (Left Side) -->
+            <div class="flex items-center w-full">
+              <!-- Left Content -->
+              <div class="w-1/2 pr-8 text-right">
+                <h3 class="text-3xl font-semibold">
+                  Started Learning Web Development
+                </h3>
+                <p class="text-2xl text-[#101828]">HTML</p>
+                <p class="text-2xl text-[#101828]">03 FEB 2025 - 10 FEB 2025</p>
+              </div>
+  
+              <!-- Point on the Line -->
+              <div
+                class="relative w-6 h-6 bg-[#00d646] rounded-full flex items-center justify-center"
+              >
+                <!-- <div class="w-4 h-4 bg-white rounded-full"></div> -->
+              </div>
+  
+              <!-- Right Content (Empty for alignment) -->
+              <div class="w-1/2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[url('https://static.wixstatic.com/media/035244_9fd1a405d2864f3b8415885edfcd79dd~mv2.jpg/v1/fill/w_980,h_561,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_9fd1a405d2864f3b8415885edfcd79dd~mv2.jpg')] bg-cover bg-center h-[80vh] flex items-center justify-center">
+      <!-- Contact Content Container -->
+      <div class=" p-8 w-10/12 max-w-6xl mx-auto rounded-lg absolute bottom-0 top-930 leading-loose">
+        <div class="bg-[#101828] shadow-lg">
+        <div class="flex flex-col md:flex-row gap-8 px-4 py-4 mx-5 my-5">
+          <!-- Left Side: Contact Info -->
+          <div class="flex-1 text-white text-center content-center">
+            <h1 class="font-bold  mb-6 text-8xl text-cyan-500">CONTACT</h1>
+            <p class="mb-5">
+              Feel free to reach out if you have any questions, collaboration
+              ideas, or just want to say hello! I’m always open to discussing new
+              projects, creative ideas, or opportunities to be part of your
+              vision. You can contact me via email or connect with me on social
+              media. I’ll do my best to get back to you as soon as possible!
+              Looking forward to hearing from you!
+            </p>
+            <a href="mailto:info@mysite.com" class="block mb-3">info@mysite.com</a>
+            <p>Tel : (+233) 55 825 0020</p>
+          </div>
+    
+          <!-- Right Side: Contact Form -->
+          <div class="flex-1">
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <label for="first-name" class="block text-white">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  class="w-full px-3 py-2 text-sm text-gray-700 border rounded shadow focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="last-name" class="block text-white">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  class="w-full px-3 py-2 text-sm text-gray-700 border rounded shadow focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="block text-white">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-3 py-2 text-sm text-gray-700 border rounded shadow focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-white">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-3 py-2 text-sm text-gray-700 border rounded shadow focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-white">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-3 py-2 text-sm text-gray-700 border rounded shadow focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-[#00d646] hover:bg-green-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+    
+        <!-- Social Media Links -->
+        <ul class="flex justify-center gap-12 mt-8 py-5">
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-white hover:text-cyan-500">
+              <i class="fa fa-linkedin fa-3x text-[#00d646]  hover:text-green-700" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.x.com/OmarInusah/" target="_blank" class="text-white hover:text-cyan-500">
+              <i class="fa fa-twitter fa-3x text-[#00d646] hover:text-green-700" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/omar.inusah/" target="_blank" class="text-white hover:text-cyan-500">
+              <i class="fa fa-facebook fa-3x text-[#00d646] hover:text-green-700" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/omarinusah/" target="_blank" class="text-white hover:text-cyan-500">
+              <i class="fa fa-instagram fa-3x text-[#00d646] hover:text-green-700" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+      
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="flex flex-row justify-around items-center bg-[#101828] py-3 text-white">
+      <!-- <img src="" alt="logo" class="logo" /> -->
+      <p class="text-4xl text-[#00d646] items-center mx-2 my-2">[
+        <span class="text-2xl text-white font-bold">O</span>
+        <span class="text-2xl">.</span>
+      </span><span class="text-2xl text-white font-bold">I</span> ]
+    </p>
+      <p>© 2035 by Omar Inusah.</p>
+    </footer>
+  </body>
+</html>

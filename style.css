@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+height: 130vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333B50;
+    padding: 30px;
+    background-size: ;
+}
+.navbar a{
+    color: #707A8A;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #00D646;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;   
+}
+.hero {
+    text-align: center;
+    align-items: center;
+    line-height: 2;
+    margin-top: 150px;
+    font-size: 30px;
+
+}
+.about {
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 20%;
+    height: 70vh;
+    background-color: #333B50;
+    color: white;
+    padding: 20px;
+    line-height: 3;
+}
+.about a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border: 1px solid #00D646;
+}
+.about a:hover {
+    background-color: #00D646;
+}
+.about .about-text {
+    margin-bottom: 10px;
+}
+.skills {
+    height: 100vh;
+    padding: 20px;
+    line-height: 3;
+    align-content: center;
+    background-color: #707A8A;
+}
+.skills h1 {
+    line-height: normal;
+    margin
+}
+/* Container for each skill */
+.skill {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    margin-bottom: 20px;
+   
+  }
+  
+  /* Skill name (left) */
+  .skill-name {
+    width: 100px; /* Fixed width for skill names */
+    font-weight: bold;
+  }
+  
+  /* Progress bar (middle) */
+  .skill-bar {
+    flex-grow: 1; /* Takes up remaining space */
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px; /* Spacing between bar and percentage */
+  }
+  
+  /* Colored part of the bar */
+  .skill-level {
+    height: 100%;
+    background-color: #4caf50; /* Green color for the bar */
+    border-radius: 10px;
+  }
+  
+  /* Percentage (right) */
+  .skill-percent {
+    width: 50px; /* Fixed width for percentages */
+    text-align: right;
+    font-weight: bold;
+  }

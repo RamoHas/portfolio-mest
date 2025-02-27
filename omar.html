@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>My Portfolio</title>
+    <style>
+      /* Keyframes for typing animation */
+      @keyframes typing {
+        0% { width: 0; }
+        100% { width: 100%; }
+      }
+  
+      /* Keyframes for blinking cursor */
+      @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+      }
+  
+      /* Keyframes to control visibility */
+      @keyframes visibility {
+        0%, 50% { opacity: 1; }
+        50.01%, 100% { opacity: 0; }
+      }
+  
+      /* Animation for the first text */
+      .animate-typing-1 {
+        animation: 
+          typing 4s steps(30, end) infinite,
+          blink-caret 0.75s step-end infinite,
+          visibility 8s step-end infinite;
+        animation-fill-mode: none; /* Reset width after each cycle */
+      }
+  
+      /* Animation for the second text */
+      .animate-typing-2 {
+        animation: 
+          typing 4s steps(30, end) 4s infinite,
+          blink-caret 0.75s step-end 4s infinite,
+          visibility 8s step-end infinite;
+        animation-fill-mode: none; /* Reset width after each cycle */
+      }
+    </style>
+  </head>
+  <body class="font-sans">
+    <!-- Header Section -->
+    <header class="h-[140vh] bg-center bg-no-repeat bg-[url('./image/pic5.jpeg')] bg-cover">
+      <nav class="flex flex-col sm:flex-row justify-around items-center bg-[#101828] py-4 text-white">
+        <p class="text-4xl text-[#00d646] items-center mx-4 my-4">[<span class="text-2xl text-white font-bold">O</span><span class="text-2xl">.</span></span><span class="text-2xl text-white font-bold">I</span> ]</p>
+        <ul class="flex flex-col sm:flex-row justify-center gap-6">
+          <li><a href="#" class="hover:text-[#00d646]">HOME</a></li>
+          <li><a href="#" class="hover:text-[#00d646]">EXPERIENCE</a></li>
+          <li><a href="#" class="hover:text-[#00d646]">PORTFOLIO</a></li>
+          <li><a href="#" class="hover:text-[#00d646]">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="h-full bg-gradient-to-r from-grey/50 to-black/50"></div>
+      <div class="ml-16 sm:ml-32 font-bold text-white absolute top-1/4 sm:top-1/3">
+        <h1 class="text-4xl sm:text-8xl">I <span class="text-4xl sm:text-8xl" style="color: #00d646">'</span> M</h1>
+        <h1 class="text-4xl sm:text-8xl">O M A R</h1>
+        <h1 class="text-4xl sm:text-8xl">
+          I N U S A H<span class="highlight" style="color: #00d646">.</span>
+        </h1>
+        <div class="relative">
+          <!-- First Text -->
+          <p class="my-6 text-lg sm:text-3xl text-cyan-500 font-mono overflow-hidden whitespace-nowrap animate-typing-1">
+            A WEB DEVELOPER
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="h-[150vh] bg-[url('./image/pic7.jpg')] bg-center bg-no-repeat bg-cover">
+      <div class="w-10/12 sm:w-8/12 mx-auto bg-[#101828] py-3 px-6 leading-15 text-white text-center absolute top-1/3 sm:top-1/4">
+        <p class="text-4xl sm:text-6xl text-[#00d646] items-center mx-4 my-4">[<span class="text-2xl text-white font-bold">O</span><span class="text-2xl">.</span></span><span class="text-2xl text-white font-bold">I</span> ]</p>
+        <p class="leading-7 px-3 py-5 text-lg sm:text-2xl">
+          Hi there! I’m Omar Inusah, a passionate scientist and web developer with a love for creating intuitive user experiences and responsive websites that keep all users satisfied. I thrive on turning ideas into reality and enjoy the challenge of solving problems through creativity and technology. With a year of experience in web development, I’ve had the opportunity to work on a variety of projects, from building responsive websites to this very portfolio website. My approach is always collaborative, detail-oriented, and focused on delivering results that not only meet but exceed expectations. I believe that curiosity and continuous learning are key to growth, both personally and professionally. I’m excited to share my work with you and would love to connect! Whether you’re looking to collaborate, have a question, or just want to say hello, feel free to reach out. Let’s create something amazing together!
+        </p>
+        <button class="px-8 py-4 text-white font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg bg-[#00d646] text-center">
+          <a href="#" class="resume-link">DOWNLOAD RESUME</a>
+        </button>
+      </div>
+      <div class="text-center">
+        <h1 class="text-3xl sm:text-6xl">01 PROFESSIONAL</h1>
+        <h2 class="text-xl sm:text-3xl">MY KNOWLEDGE LEVEL IN WEB DEVELOPMENT</h2>
+      </div>
+      <div class="space-y-4 mx-4 sm:mx-25 mt-10 sm:mt-20">
+        <div class="h-full bg-gradient-to-r from-black/50 to-transparent">
+          <!-- Skills Progress Bars -->
+          <!-- Example Skill: HTML -->
+          <div class="mb-4">
+            <span class="text-gray-700 text-lg sm:text-4xl py-3">HTML</span>
+            <div class="h-3 bg-[#00d646] rounded-full overflow-hidden">
+              <div class="h-full bg-cyan-500" style="width: 70%"></div>
+            </div>
+            <span class="text-gray-700 text-lg sm:text-3xl">70%</span>
+          </div>
+          <!-- Repeat the skill divs for CSS, JavaScript, and Cybersecurity -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="h-[100vh] text-center pt-10 bg-gray-900 text-white">
+      <!-- Section Header -->
+      <div class="section-header mb-16">
+        <div class="text-center text-4xl sm:text-8xl flex flex-row justify-center gap-6 font-bold items-center">
+          <span class="text-[#BEC7D5]">02</span>
+          <p class="text-4xl sm:text-8xl text-cyan-500">PORTFOLIO</p>
+        </div>
+        <h2 class="text-lg sm:text-xl mt-4 text-gray-400">
+          MY LATEST WORK HERE. <a href="#" class="text-cyan-500 hover:underline">SEE MORE ></a>
+        </h2>
+      </div>
+    
+      <!-- Projects Container -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-8 px-8">
+        <!-- Project 1 -->
+        <a href="#" class="project h-80 sm:h-96 w-80 bg-cover bg-center rounded-lg shadow-lg hover:scale-105 transition-transform" style="background-image: url('path-to-image.jpg');">
+          <div class="project-overlay bg-black/50 text-white text-center py-4 rounded-lg">
+            <h3 class="text-xl sm:text-2xl">Project Title</h3>
+            <p class="text-sm sm:text-lg">Short description of the project.</p>
+          </div>
+        </a>
+        <!-- Repeat similar divs for other projects -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#101828] text-white h-[100vh] py-8">
+      <div class="w-10/12 mx-auto">
+        <h2 class="text-center text-4xl sm:text-6xl mb-10">CONTACT ME</h2>
+        <form action="#" method="POST" class="w-full sm:w-8/12 mx-auto text-lg sm:text-2xl">
+          <!-- Form Fields -->
+          <div class="mb-4">
+            <label for="name" class="block text-xl mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00d646]" required>
+          </div>
+          <!-- Add similar input fields for Email, Subject, and Message -->
+          <button type="submit" class="px-8 py-4 bg-[#00d646] text-white font-bold rounded-full w-full sm:w-1/2 mx-auto">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
