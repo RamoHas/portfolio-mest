@@ -83,15 +83,14 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="h-[140vh]  bg-center bg-no-repeat bg-[url('./image/pic8.jpg')] bg-cover ">
-      
-      <nav class="flex flex-row justify-around items-center bg-[#101828] py-2 text-white ">
-        <!-- <img src="" alt="logo" class="logo" /> -->
+    <header class="h-[140vh] bg-center bg-no-repeat bg-[url('./image/pic8.jpg')] bg-cover">
+      <!-- Navbar -->
+      <nav class="flex flex-row justify-around items-center bg-[#101828] py-2 text-white">
         <p class="text-4xl text-[#00d646] items-center mx-4 my-4">[
           <span class="text-2xl text-white font-bold">O</span>
           <span class="text-2xl">.</span>
-        </span><span class="text-2xl text-white font-bold">I</span> ]
-      </p>
+          <span class="text-2xl text-white font-bold">I</span> ]
+        </p>
         <ul class="flex flex-row justify-center gap-6">
           <li><a href="#" class="hover:text-[#00d646]">HOME</a></li>
           <li><a href="index.html#experience" class="hover:text-[#00d646]">EXPERIENCE</a></li>
@@ -99,29 +98,36 @@
           <li><a href="index.html#contact" class="hover:text-[#00d646]">CONTACT</a></li>
         </ul>
       </nav>
+    
+      <!-- Gradient Overlay -->
       <div class="h-full bg-gradient-to-r from-black/75 to-black/65"></div>
-      
-
-      </div>
-      
-      <div class=" ml-180 font-bold text-white absolute top-40">
-        <h1 class="text-8xl">I <span class="text-8xl" style="color: #00d646">'</span> M</h1>
-        <h1 class="text-8xl">O M A R</h1>
-        <h1 class="text-8xl ">
-          I N U S A H<span class="highlight" style="color: #00d646">.</span>
-        </h1>
-        <div class="relative">
-          <!-- First Text -->
-          <p class="my-6 text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-1">
-             A<span class="text-cyan-500"> WEB</span><span class="text-[#00d646]"> DEVELOPER</span>
-          </p>
-      
-          <!-- Second Text -->
-          <p class="my-10 text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-2 absolute top-0 left-0" style="animation-delay: 2s;">
-           CYBER<span class="text-cyan-500">SECURITY</span><span class="text-[#00d646]"> EXPERT</span> 
-          </p>
+    
+      <!-- Header Content -->
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between absolute top-40 left-0 right-0">
+        <!-- Image on the Left -->
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 order-1 md:order-1">
+          <img src="./image/pic5.jpeg" alt="Omar Inusah" class="w-full h-auto rounded-lg shadow-lg" />
         </div>
-       
+    
+        <!-- Text Content on the Right -->
+        <div class="text-white font-bold order-2 md:order-2">
+          <h1 class="text-6xl md:text-8xl">I <span class="text-6xl md:text-8xl" style="color: #00d646">'</span> M</h1>
+          <h1 class="text-6xl md:text-8xl">O M A R</h1>
+          <h1 class="text-6xl md:text-8xl">
+            I N U S A H<span class="highlight" style="color: #00d646">.</span>
+          </h1>
+          <div class="relative">
+            <!-- First Text -->
+            <p class="my-6 text-2xl md:text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-1">
+              A<span class="text-cyan-500"> WEB</span><span class="text-[#00d646]"> DEVELOPER</span>
+            </p>
+    
+            <!-- Second Text -->
+            <p class="my-10 text-2xl md:text-3xl text-white font-mono overflow-hidden whitespace-nowrap animate-typing-2 absolute top-0 left-0" style="animation-delay: 2s;">
+              CYBER<span class="text-cyan-500">SECURITY</span><span class="text-[#00d646]"> EXPERT</span>
+            </p>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -167,11 +173,11 @@
       <div class="absolute top-320">
         <div class="section-header ">
           <div class="text-center text-8xl flex flex-row justify-center gap-6 font-bold items-center">
-            <span class="text-[#BEC7D5]">01</span>
+            <span class="text-gray-500">01</span>
             <p class="text-8xl text-cyan-500">SKILLS</p>
           </div>
-          <h2 class="text-xl mt-4 text-gray-400 text-center items-center">
-            MY TECHNICAL SKILLS ACCRUED SO FAR:
+          <h2 class="text-xl mt-4 text-gray-700 text-center items-center">
+            MY TECHNICAL SKILLS:
           </h2>
         </div>
         <!-- HTML Skill -->
@@ -259,11 +265,11 @@
       <!-- Section Header -->
       <div class="section-header mb-16">
         <div class="text-center text-8xl flex flex-row justify-center gap-6 font-bold items-center">
-          <span class="text-[#BEC7D5]">02</span>
+          <span class="text-gray-500">02</span>
           <p class="text-8xl text-cyan-500">PORTFOLIO</p>
         </div>
         <h2 class="text-xl mt-4 text-gray-400">
-          MY LATEST WORK HERE. <a href="" class="text-cyan-500 hover:underline">SEE MORE ></a>
+          MY LATEST WORK HERE. <a href="" class="text-[#00d646] hover:text-green-700">SEE MORE ></a>
         </h2>
       </div>
     
@@ -295,7 +301,7 @@
     <!-- Experience Section -->
     <section class="h-[200vh] bg-[url('https://static.wixstatic.com/media/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg/v1/fill/w_980,h_2856,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/035244_1f9f5504879f46cc90c68e323a18ea59~mv2_d_1920_3986_s_2.jpg')] bg-center bg-no-repeat bg-cover" id="experience">
       <div class="text-center text-8xl flex flex-row justify-center gap-9 font-bold absolute top-685 bottom-0 left-105 content-center">
-        <span class="text-[#BEC7D5]">03</span>
+        <span class="text-gray-500">03</span>
         <p class="text-8xl text-cyan-500">EXPERIENCE</p>
       </div>
       <div class="mx-auto pt-80">
